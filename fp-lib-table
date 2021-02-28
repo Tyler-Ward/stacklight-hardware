@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name stack-light)(type KiCad)(uri ${KIPRJMOD}/stack-light.pretty)(options "")(descr ""))
+)
