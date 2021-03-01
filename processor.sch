@@ -90,7 +90,7 @@ Text Notes 9500 1400 2    50   ~ 0
 Wire Wire Line
 	8800 2000 8800 2100
 $Comp
-L stack-light-rescue:USB_C_Receptacle_USB2.0-Connector J4
+L Connector:USB_C_Receptacle_USB2.0 J4
 U 1 1 5DB0CA37
 P 1650 6500
 AR Path="/5DB0CA37" Ref="J4"  Part="1" 
@@ -126,10 +126,8 @@ F 3 "" H 1350 7400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2250 6400 2250 6500
-Connection ~ 2250 6500
 Wire Wire Line
 	2250 6700 2250 6600
-Connection ~ 2250 6600
 $Comp
 L power:GND #PWR0157
 U 1 1 5DB1D4CE
@@ -602,7 +600,7 @@ Wire Wire Line
 Wire Wire Line
 	2600 6100 2750 6100
 $Comp
-L stack-light-rescue:USBLC6-2SC6-Power_Protection U6
+L Power_Protection:USBLC6-2SC6 U6
 U 1 1 6039A5CC
 P 3150 7050
 AR Path="/6039A5CC" Ref="U6"  Part="1" 
@@ -1007,21 +1005,13 @@ Wire Wire Line
 Wire Wire Line
 	2250 6600 3650 6600
 Wire Wire Line
-	3150 5900 3150 6550
-Wire Wire Line
 	3650 6950 3650 6600
 Wire Wire Line
-	2650 6950 2500 6950
-Wire Wire Line
 	2500 6950 2500 6500
-Wire Wire Line
-	2650 7150 2600 7150
 Wire Wire Line
 	2600 6500 4400 6500
 Wire Wire Line
 	2600 6500 2600 7150
-Wire Wire Line
-	3650 7150 3750 7150
 Wire Wire Line
 	3750 7150 3750 6600
 Wire Wire Line
@@ -1278,4 +1268,16 @@ F 3 "~" H 7950 1700 50  0001 C CNN
 	1    7950 1700
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2500 6950 2750 6950
+Wire Wire Line
+	2600 7150 2750 7150
+Wire Wire Line
+	3150 7550 3150 7450
+Wire Wire Line
+	3550 7150 3750 7150
+Wire Wire Line
+	3650 6950 3550 6950
+Wire Wire Line
+	3150 5900 3150 6650
 $EndSCHEMATC

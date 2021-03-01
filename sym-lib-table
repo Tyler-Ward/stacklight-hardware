@@ -1,5 +1,4 @@
 (sym_lib_table
   (lib (name parts)(type Legacy)(uri ${KIPRJMOD}/parts.lib)(options "")(descr ""))
   (lib (name LAN8710A-EZC)(type Legacy)(uri ${KIPRJMOD}/snapeda-parts/LAN8710A-EZC.lib)(options "")(descr ""))
-  (lib (name stack-light-rescue)(type Legacy)(uri ${KIPRJMOD}/stack-light-rescue.lib)(options "")(descr ""))
 )
