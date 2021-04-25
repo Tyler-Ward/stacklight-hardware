@@ -754,6 +754,4 @@ Wire Wire Line
 Wire Wire Line
 	4800 4000 4600 4000
 Connection ~ 4800 4000
-Text Notes 4050 5700 0    50   ~ 0
-Check these resistor values against datasheet and transformer
 $EndSCHEMATC
