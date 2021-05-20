@@ -496,7 +496,7 @@ P 3900 2400
 AR Path="/602A9C12" Ref="R?"  Part="1" 
 AR Path="/5DEE5ACA/602A9C12" Ref="R28"  Part="1" 
 F 0 "R28" V 3693 2400 50  0000 C CNN
-F 1 "10k" V 3784 2400 50  0000 C CNN
+F 1 "DNP" V 3784 2400 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3830 2400 50  0001 C CNN
 F 3 "~" H 3900 2400 50  0001 C CNN
 	1    3900 2400
@@ -555,7 +555,7 @@ Text GLabel 3350 2100 2    50   Input ~ 0
 Yellow
 Text GLabel 3550 3400 2    50   Input ~ 0
 Green
-Text GLabel 3350 2200 2    50   Input ~ 0
+Text GLabel 4650 2200 2    50   Input ~ 0
 Buzzer
 Text Label 3800 6500 0    50   ~ 0
 USB_D-
@@ -1017,8 +1017,6 @@ Wire Wire Line
 Wire Wire Line
 	3750 6600 4850 6600
 Wire Wire Line
-	3350 2200 3100 2200
-Wire Wire Line
 	3350 2100 3100 2100
 $Comp
 L Mechanical:MountingHole H5
@@ -1280,4 +1278,39 @@ Wire Wire Line
 	3650 6950 3550 6950
 Wire Wire Line
 	3150 5900 3150 6650
+$Comp
+L Device:R R?
+U 1 1 60A94591
+P 4800 2350
+AR Path="/60A94591" Ref="R?"  Part="1" 
+AR Path="/5DEE5ACA/60A94591" Ref="R?"  Part="1" 
+F 0 "R?" V 4593 2350 50  0000 C CNN
+F 1 "10k" V 4684 2350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4730 2350 50  0001 C CNN
+F 3 "~" H 4800 2350 50  0001 C CNN
+	1    4800 2350
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60A94AE4
+P 4950 2450
+F 0 "#PWR?" H 4950 2200 50  0001 C CNN
+F 1 "GND" H 4955 2277 50  0000 C CNN
+F 2 "" H 4950 2450 50  0001 C CNN
+F 3 "" H 4950 2450 50  0001 C CNN
+	1    4950 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2450 4950 2350
+Wire Wire Line
+	4650 2350 4500 2350
+Wire Wire Line
+	4500 2350 4500 2200
+Wire Wire Line
+	4500 2200 4650 2200
+Wire Wire Line
+	3100 2200 4500 2200
+Connection ~ 4500 2200
 $EndSCHEMATC

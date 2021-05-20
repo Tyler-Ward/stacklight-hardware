@@ -754,4 +754,68 @@ Wire Wire Line
 Wire Wire Line
 	4800 4000 4600 4000
 Connection ~ 4800 4000
+$Comp
+L Device:R R?
+U 1 1 60ABBA44
+P 9650 5600
+F 0 "R?" V 9443 5600 50  0000 C CNN
+F 1 "330" V 9534 5600 50  0000 C CNN
+F 2 "Resistor_SMD:R_1210_3225Metric" V 9580 5600 50  0001 C CNN
+F 3 "~" H 9650 5600 50  0001 C CNN
+	1    9650 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60ABCD5B
+P 9950 5600
+F 0 "R?" V 9743 5600 50  0000 C CNN
+F 1 "DNP" V 9834 5600 50  0000 C CNN
+F 2 "Resistor_SMD:R_1210_3225Metric" V 9880 5600 50  0001 C CNN
+F 3 "~" H 9950 5600 50  0001 C CNN
+	1    9950 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 5350 9650 5450
+Wire Wire Line
+	9650 5350 9800 5350
+Wire Wire Line
+	9950 5350 9950 5450
+Wire Wire Line
+	9650 5750 9650 5850
+Wire Wire Line
+	9950 5750 9950 5850
+Wire Wire Line
+	9950 5850 9800 5850
+Text Notes 8100 6300 0    50   ~ 0
+Power load resistors to meet mimum draw for POE components.\nAlso neeeded to keep power draw high enougth to avoid transformer noise.\nValues are placeholders and will need tuning.
+$Comp
+L power:+12V #PWR?
+U 1 1 60AE6DBE
+P 9800 5350
+F 0 "#PWR?" H 9800 5200 50  0001 C CNN
+F 1 "+12V" H 9815 5523 50  0000 C CNN
+F 2 "" H 9800 5350 50  0001 C CNN
+F 3 "" H 9800 5350 50  0001 C CNN
+	1    9800 5350
+	1    0    0    -1  
+$EndComp
+Connection ~ 9800 5350
+Wire Wire Line
+	9800 5350 9950 5350
+$Comp
+L power:GND #PWR?
+U 1 1 60AE756C
+P 9800 5850
+F 0 "#PWR?" H 9800 5600 50  0001 C CNN
+F 1 "GND" H 9805 5677 50  0000 C CNN
+F 2 "" H 9800 5850 50  0001 C CNN
+F 3 "" H 9800 5850 50  0001 C CNN
+	1    9800 5850
+	1    0    0    -1  
+$EndComp
+Connection ~ 9800 5850
+Wire Wire Line
+	9800 5850 9650 5850
 $EndSCHEMATC
