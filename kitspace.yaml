@@ -1,0 +1,4 @@
+bom: stack-light_BOM.xlsx
+eda:
+    type: kicad
+    pcb: stack-light.kicad_pcb
