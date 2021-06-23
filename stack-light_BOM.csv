@@ -1,5 +1,4 @@
-POE Stack light r1.1 BOM
-﻿Id,Reference,Package,Quantity,Value,MPN,Digikey,Mouser
+Id,Reference,Package,Quantity,Value,MPN,Digikey,Mouser
 50,U5,ARJM11C7-114-BA,1,ARJM11C7-114-BA,ARJM11C7-114-BA,535-14168-ND,815-RJM11C7114BAEW2
 60,J3,BarrelJack_Horizontal,1,Barrel_Jack_Switch,,CP-037A-ND,
 9,"C31,C32,C17",C_0603_1608Metric,3,10u,,1276-1119-1-ND,
