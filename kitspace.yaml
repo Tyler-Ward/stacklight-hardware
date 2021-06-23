@@ -1,4 +1,9 @@
-bom: stack-light_BOM.xlsx
+---
+# This file contains details for the projects listing on kitspace.com
+summary: The POE stack light is a network controlled status indication light that is powered over the network using POE.
+site: https://www.scorpia.co.uk/2021/05/23/building-a-poe-enabled-lighting-fixture/
+color: blue
+bom: stack-light_BOM.csv
 eda:
     type: kicad
     pcb: stack-light.kicad_pcb
