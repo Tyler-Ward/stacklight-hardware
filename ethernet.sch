@@ -86,10 +86,6 @@ Wire Wire Line
 Connection ~ 8800 5300
 Wire Wire Line
 	8800 5300 8800 5500
-Text GLabel 8650 5500 0    50   Input ~ 0
-LED_GND
-Wire Wire Line
-	8650 5500 8800 5500
 Wire Wire Line
 	8000 5000 8200 5000
 $Comp
@@ -843,4 +839,15 @@ Text GLabel 8000 5000 0    50   Input ~ 0
 LED_status
 Text GLabel 5550 3000 0    50   Input ~ 0
 LED_status
+$Comp
+L power:GND #PWR?
+U 1 1 612DAEC9
+P 8800 5500
+F 0 "#PWR?" H 8800 5250 50  0001 C CNN
+F 1 "GND" H 8805 5327 50  0000 C CNN
+F 2 "" H 8800 5500 50  0001 C CNN
+F 3 "" H 8800 5500 50  0001 C CNN
+	1    8800 5500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
