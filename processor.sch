@@ -1097,7 +1097,7 @@ F 3 "~" H 10800 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10950 1750 10800 1750
+	10950 1750 10900 1750
 Wire Wire Line
 	10450 1750 10800 1750
 Connection ~ 10800 1750
@@ -1118,7 +1118,7 @@ F 3 "~" H 8400 1850 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	8250 1700 8400 1700
+	8250 1700 8300 1700
 Wire Wire Line
 	8400 1700 8800 1700
 Connection ~ 8400 1700
@@ -1280,4 +1280,42 @@ Wire Wire Line
 Connection ~ 4500 2200
 Wire Wire Line
 	3100 1600 3800 1600
+$Comp
+L Regulator_Switching:TSR_1-2433 U13
+U 1 1 6130112F
+P 9300 2900
+F 0 "U13" H 9300 3267 50  0000 C CNN
+F 1 "TSR_1-2433" H 9300 3176 50  0000 C CNN
+F 2 "Converter_DCDC:Converter_DCDC_TRACO_TSR-1_THT" H 9300 2750 50  0001 L CIN
+F 3 "http://www.tracopower.com/products/tsr1.pdf" H 9300 2900 50  0001 C CNN
+	1    9300 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 1700 8300 2800
+Wire Wire Line
+	8300 2800 8900 2800
+Connection ~ 8300 1700
+Wire Wire Line
+	8300 1700 8400 1700
+Wire Wire Line
+	9700 2800 10900 2800
+Wire Wire Line
+	10900 2800 10900 1750
+Connection ~ 10900 1750
+Wire Wire Line
+	10900 1750 10800 1750
+$Comp
+L power:GND #PWR?
+U 1 1 6130FCEF
+P 9300 3100
+AR Path="/6130FCEF" Ref="#PWR?"  Part="1" 
+AR Path="/5DEE5ACA/6130FCEF" Ref="#PWR0161"  Part="1" 
+F 0 "#PWR0161" H 9300 2850 50  0001 C CNN
+F 1 "GND" H 9305 2927 50  0000 C CNN
+F 2 "" H 9300 3100 50  0001 C CNN
+F 3 "" H 9300 3100 50  0001 C CNN
+	1    9300 3100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
